@@ -1,0 +1,214 @@
+/* All classes end with 7 as requested */
+
+/* Base layout */
+.container7 {
+  max-width: 1200px;
+  margin: 18px auto;
+  padding: 18px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #1f2937;
+}
+
+/* Header */
+.header7 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.heading7 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+.para7 {
+  margin: 0;
+  color: #4b5563;
+}
+
+/* Top row summary and controls */
+.topRow7 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.summaryCard7 {
+  background: #fff;
+  border: 1px solid #e6edf3;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(14, 30, 37, 0.04);
+}
+.label7 {
+  font-size: 12px;
+  color: #6b7280;
+}
+.value7 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.controls7 {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Inputs */
+.search7, .filter7 {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d1dce6;
+  outline: none;
+  font-size: 14px;
+}
+.search7 {
+  width: 260px;
+}
+.filter7 {
+  width: 160px;
+}
+
+/* Table for desktop */
+.tableWrapper7 {
+  overflow-x: auto;
+  margin-bottom: 18px;
+}
+.table7 {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  min-width: 900px;
+}
+.th7 {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eef2f6;
+  font-size: 13px;
+  color: #374151;
+}
+.td7 {
+  padding: 12px;
+  border-bottom: 1px solid #f3f6f8;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.tr7:hover {
+  background: linear-gradient(90deg, rgba(244,246,248,0.6), transparent);
+}
+.center7 { text-align: center; }
+.mono7 { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; font-size: 13px; color: #0f172a; }
+
+/* Product list in table */
+.prodList7 { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.prodItem7 { font-size: 13px; color: #374151; }
+.qty7 { opacity: 0.7; font-size: 12px; margin-left: 6px; color: #6b7280; }
+
+/* Dropdown / details */
+.dropdown7 {
+  background: #fbfcfd;
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid #e6eef6;
+}
+.summary7 {
+  cursor: pointer;
+  font-weight: 600;
+  color: #0f172a;
+  padding: 6px;
+  list-style: none;
+}
+.sectionTitle7 { margin-top: 8px; font-weight: 700; font-size: 13px; color: #0f172a; }
+.sep7 { margin: 8px 0; border: none; height: 1px; background: #eef3f7; }
+
+/* checkbox rows */
+.chkRow7 {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 8px 6px;
+  border-radius: 6px;
+}
+.chkRow7:hover { background: rgba(15,23,42,0.02); }
+.checkbox7 { width: 18px; height: 18px; margin-top: 4px; accent-color: #2563eb; }
+
+/* small text */
+.small7 { font-size: 12px; color: #6b7280; }
+
+/* Buttons */
+.actionBtns7 {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.btn7 {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #dbe7f9;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn7.primary7 {
+  background: linear-gradient(90deg,#2563eb,#1e40af);
+  color: #fff;
+  border: none;
+}
+
+/* Mobile card list */
+.cardList7 {
+  display: none;
+}
+
+/* Card */
+.card7 {
+  display: none;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #e9f0f7;
+  margin-bottom: 12px;
+  box-shadow: 0 8px 24px rgba(14, 30, 37, 0.04);
+}
+.cardHeader7 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardTitle7 { font-weight: 700; font-size: 16px; }
+.cardOrderId7 { font-size: 12px; color: #6b7280; }
+.cardMeta7 { text-align: right; }
+.amount7 { font-weight: 800; }
+.books7 { font-size: 13px; color: #6b7280; margin-top: 4px; }
+.cardBody7 { margin-top: 8px; }
+.prodMiniList7 { display: flex; gap: 8px; flex-wrap: wrap; }
+.prodMini7 { background: #f8fafc; padding: 6px 8px; border-radius: 6px; font-size: 13px; }
+
+/* Responsive breakpoints */
+@media (max-width: 900px) {
+  .topRow7 { grid-template-columns: 1fr 1fr; }
+  .search7 { width: 100%; }
+  .table7 { display: none; }
+  .cardList7 { display: block; }
+  .card7 { display: block; }
+  .controls7 { grid-column: span 2; gap: 8px; }
+}
+
+/* Tiny screens */
+@media (max-width: 480px) {
+  .topRow7 { grid-template-columns: 1fr; gap: 8px; }
+  .controls7 { justify-content: stretch; gap: 6px; flex-direction: column; }
+  .search7 { width: 100%; }
+  .filter7 { width: 100%; }
+  .heading7 { font-size: 18px; }
+}
+
+/* Empty row */
+.empty7 { text-align: center; padding: 18px; color: #6b7280; }
+
+/* utility */
+.text7 { font-weight: 700; font-size: 13px; }
